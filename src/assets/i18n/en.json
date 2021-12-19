@@ -1,0 +1,22 @@
+{
+    "currentTheme":"ltr",
+    "welcomeMessage": "Thanks for joining, {{ firstName }}! It's great to have you!",
+    "login": {
+      "username": "Enter your user name",
+      "password": "Password here"
+    },
+    "demo": {        
+        "greeting": "Hello {{name}}!",
+        "title":"welcome"
+      },
+      "headerMenus":{
+            "aboutUs":"About",
+            "legislation":"legislation",
+            "services":"Services",
+            "projects":"Projects",
+            "media":"Media",
+            "openData":"Open Data",
+            "e-participation":"E-Participation",
+            "contact":"Contact"
+      }
+  }

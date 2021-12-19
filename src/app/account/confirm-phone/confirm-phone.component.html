@@ -1,0 +1,22 @@
+
+
+<h1>Phone Confirmation</h1>
+<h4>We sent you a confirmation code on your mobile phone (+971506335356) from 6 digits, It is valid for 5 minutes</h4>
+
+<form [formGroup]="frmConfirmPhone">   
+        <p>
+            <label>Confirmation Code:</label>
+           <input type="text" formControlName="confirmationcode">
+        <p>
+            <button (click)="sendCode(frmConfirmPhone.value)" [disabled]="frmConfirmPhone.invalid">Confirm</button>
+        </p>
+        
+        <p>
+            <button (click)="proceed()">Remind me later</button>
+        </p>
+
+        <p>
+            <label>In case you didn't receive SMS code within 5 minutes, kindly click on resend button</label>
+            <button (click)="resendCode()">Resend</button>
+        </p>
+</form>

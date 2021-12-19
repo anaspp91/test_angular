@@ -1,0 +1,23 @@
+{
+    "currentTheme":"rtl",
+    "welcomeMessage": "Thanks for محمد صالح عبدالله, {{ firstName }}! It's great to have you!",
+    "login": {
+      "username": "Enter your محمد صالح عبدالله name",
+      "password": "Password here"
+    },
+    "demo": {
+        "title": "محمد صالح عبدالل",
+        "text": "﻿Dies ist eine einfache Applikation um die Funktionen von ngx-transalte zu demonstrieren.",
+        "greeting": "Hallo {{name}}!"
+    },
+    "headerMenus":{
+        "aboutUs":"عن الوزارة",
+        "legislation":"التشريعات",
+        "services":"الخدمات",
+        "projects":"المشاريع",
+        "media":"المركز الإعلامي",
+        "openData":"البيانات المفتوحة",
+        "e-participation":"المشاركة الإلكترونية",
+        "contact":"تواصل معنا"
+  }
+  }

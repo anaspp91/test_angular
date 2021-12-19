@@ -1,0 +1,15 @@
+
+<app-header (sendMsgEvent) = "printMsg($event)"></app-header>
+<app-sidebar></app-sidebar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+<re-captcha (resolved)="resolved($event)" siteKey="6Lc5cmcdAAAAALMMRRzRLeHJZR5slWe9kuKNOn9B"></re-captcha>
+{{msg}}
+<!-- <h1>{{ 'demo.title' | translate }}</h1>
+<p>{{isRTL1}}</p> -->
+<!-- <p>{{ 'welcomeMessage' | translate: user }}</p> 
+<input type="password" placeholder="{{ 'login.password' | translate }}">
+<label translate='login.username'></label>
+<button (click)="useLanguage('en')">en</button>
+<button (click)="useLanguage('ar')">ar</button>-->
+

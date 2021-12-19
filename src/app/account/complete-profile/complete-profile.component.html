@@ -1,0 +1,68 @@
+<h1>Complete Profile</h1>
+    <form [formGroup]="userProfileForm" (ngSubmit)="onSubmit()">
+        <div formGroupName="userProfile">
+            <select formControlName="userType">
+                <option *ngFor="let usertype of userTypes" value="{{usertype.id}}">{{usertype.nameEn}}</option>
+              </select>
+              <div formGroupName="person">
+                <p>
+                    <label>Emirates Id:</label>
+                    <input type="text" formControlName="emiratesId">
+                </p>    
+                <p>
+                    <label> Name:</label>
+                    <input type="text" formControlName="name">
+                </p>
+                <p>
+                    <label> title:</label>
+                    <input type="text" formControlName="title">
+                </p>    
+                            
+                <p>
+                    <label> gender:</label>
+                    <select formControlName="gender">
+                        <option *ngFor="let gender1 of genders" value="{{gender1.id}}">{{gender1.nameEn}}</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="date" formControlName="dateOfBirth"/>
+                </p>
+                <p>
+                    <label> Country:</label>
+                    <select formControlName="country">
+                        <option *ngFor="let countrie of countries" value="{{countrie.id}}">{{countrie.nameEn}}</option>
+                    </select>
+                </p>
+            
+                    <div>
+                        <label for="frontImage">Front Image: </label>
+                        <input (change)="onFileSelected($event)" type="file" id="frontImage">
+                      </div>
+                      <!-- <ng-select [(ngModel)]="selectedCar">
+                        <ng-option *ngFor="let car of cars">{{car.name}}</ng-option>
+                     </ng-select> -->
+                        
+            </div>  
+            <!-- <div formArrayName="userEstablishments">
+                <div formGroupName="establishment">
+
+                </div>
+            </div> -->
+
+            <!-- <p>
+                <label>Establishment NameEn:</label>
+                <input type="text" formControlName="userEstablishments.nameEn">                
+            </p> 
+            
+            <p>
+                <label>Establishment NameAR:</label>
+                <input type="text" formControlName="userEstablishments.nameAr">                
+            </p> 
+            
+            <p>
+                <label>Establishment:</label>
+                <input type="text" formControlName="userEstablishments.LicenseNumber">                
+            </p>   -->                       
+        </div>                             
+    </form>
+

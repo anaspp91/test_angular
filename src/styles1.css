@@ -1,0 +1,10 @@
+/* Add application styles & imports to this file! */
+
+.ltr {
+    @import 'themes/en';
+  }
+  
+  
+  .rtl {
+      @import 'themes/ar';
+  }

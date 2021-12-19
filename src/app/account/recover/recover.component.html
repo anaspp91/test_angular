@@ -1,0 +1,12 @@
+<h1>Reset Password</h1>
+<h4>We will send you instructions to reset your password.</h4>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+         <p>
+            <label>Email:</label>
+            <input type="email" formControlName="email">
+        </p>  
+        <p>
+            <button type="submit" (click)="recoverPassword(form.value)" [disabled]="form.invalid">Send</button>
+        </p>
+    </form>

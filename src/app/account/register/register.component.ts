@@ -72,7 +72,6 @@ export class RegisterComponent implements OnInit {
   modelAuthority: any = { Authority: {} };
   getUserProfile!:any;
 
-  
 
 modelCom: any = { Community: {"id":2,"regionId":2,"code":"AD"} };
  UserEstablishment: any = [{
